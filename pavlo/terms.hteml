@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use - Pavlo Bill Helper</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+    }
+    p, li {
+      font-size: 15px;
+    }
+    .updated {
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+    a {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <h1>Terms of Use</h1>
+  <p class="updated">Last updated: May 7, 2026</p>
+
+  <p>
+    These Terms of Use apply to the mobile application <strong>Pavlo Bill Helper</strong>
+    (“the App,” “we,” “our,” or “us”). By downloading, accessing, or using the App,
+    you agree to these Terms of Use.
+  </p>
+
+  <h2>1. Purpose of the App</h2>
+  <p>
+    Pavlo Bill Helper is a personal bill analysis and cost planning tool. The App helps users
+    break down recurring expenses, compare cost categories, run what-if calculations, and save
+    bill reports for personal reference.
+  </p>
+
+  <h2>2. No Financial Advice</h2>
+  <p>
+    The App is for personal organization and estimation only. It does not provide financial,
+    accounting, tax, legal, insurance, banking, debt, investment, or professional advice.
+  </p>
+  <p>
+    Any calculations, summaries, savings estimates, or insights shown in the App are based on
+    information entered by the user and should be treated as estimates only. You are responsible
+    for verifying bills, fees, taxes, contracts, payment terms, and payment obligations with the
+    relevant provider.
+  </p>
+
+  <h2>3. User Responsibility</h2>
+  <p>
+    You are responsible for the information you enter into the App and for any decisions you make
+    based on the App’s calculations or summaries. The App should not be used as the only source for
+    important financial, contract, payment, or budgeting decisions.
+  </p>
+  <p>
+    You are responsible for keeping your device secure and for managing your own backups, app data,
+    subscriptions, and account settings.
+  </p>
+
+  <h2>4. Subscriptions and Payments</h2>
+  <p>
+    Pavlo Bill Helper may offer optional auto-renewable subscriptions that unlock Pro features.
+  </p>
+
+  <p>Available subscription options may include:</p>
+  <ul>
+    <li><strong>Monthly Pro</strong> — auto-renewable subscription, 1 month</li>
+    <li><strong>Yearly Pro</strong> — auto-renewable subscription, 1 year</li>
+  </ul>
+
+  <p>
+    Pro features may include advanced bill analysis, saved reports, what-if calculations,
+    deeper cost insights, unlimited or expanded report access, and additional planning tools.
+    The exact features available may vary by app version and will be shown in the App before purchase.
+  </p>
+
+  <p>
+    Subscription prices, billing periods, and available plans are displayed in the App before purchase.
+    Payment will be charged to your Apple ID account at confirmation of purchase.
+  </p>
+
+  <p>
+    Subscriptions automatically renew unless canceled at least 24 hours before the end of the
+    current subscription period.
+  </p>
+
+  <p>
+    Your account may be charged for renewal within 24 hours before the end of the current
+    subscription period. Renewal pricing and subscription duration will be shown before purchase
+    and may also be viewed in your Apple ID subscription settings.
+  </p>
+
+  <p>
+    You can manage or cancel your subscription at any time in your App Store account settings.
+    Deleting the App does not automatically cancel an active subscription.
+  </p>
+
+  <p>
+    If a free trial, introductory offer, or promotional offer is available, unused portions of the
+    free trial may be forfeited when you purchase a subscription, where applicable.
+  </p>
+
+  <p>
+    Restore Purchases is available in the App to restore active subscriptions associated with
+    your Apple ID.
+  </p>
+
+  <p>
+    Privacy Policy:
+    <br />
+    <a href="https://eclipse67211.github.io/idontneedat-legal/pavlo/privacy.html">
+      https://eclipse67211.github.io/idontneedat-legal/pavlo/privacy.html
+    </a>
+  </p>
+
+  <p>
+    Terms of Use:
+    <br />
+    <a href="https://eclipse67211.github.io/idontneedat-legal/pavlo/terms.html">
+      https://eclipse67211.github.io/idontneedat-legal/pavlo/terms.html
+    </a>
+  </p>
+
+  <h2>5. Free and Pro Features</h2>
+  <p>
+    The App may include both free features and Pro features. We may change, add, remove, limit,
+    or update features over time. Some features may require an active subscription.
+  </p>
+
+  <h2>6. Privacy</h2>
+  <p>
+    Your use of the App is also governed by our Privacy Policy:
+    <br />
+    <a href="https://eclipse67211.github.io/idontneedat-legal/pavlo/privacy.html">
+      https://eclipse67211.github.io/idontneedat-legal/pavlo/privacy.html
+    </a>
+  </p>
+
+  <h2>7. Local Data and Saved Reports</h2>
+  <p>
+    The App may save reports, bill entries, and related information locally on your device.
+    If you delete the App or clear app data, locally saved information may be deleted.
+  </p>
+  <p>
+    You are responsible for backing up any information you want to keep.
+  </p>
+
+  <h2>8. Acceptable Use</h2>
+  <p>
+    You agree not to misuse the App, interfere with its operation, reverse engineer it,
+    use it for illegal purposes, or use it in a way that violates applicable laws or the rights
+    of others.
+  </p>
+
+  <h2>9. Availability and Changes</h2>
+  <p>
+    We may update, modify, suspend, or discontinue any part of the App at any time.
+    We do not guarantee that the App will always be available, accurate, error-free, or uninterrupted.
+  </p>
+
+  <h2>10. Disclaimer of Warranties</h2>
+  <p>
+    The App is provided on an “as is” and “as available” basis. To the fullest extent permitted
+    by law, we disclaim all warranties, express or implied, including warranties of merchantability,
+    fitness for a particular purpose, and non-infringement.
+  </p>
+
+  <h2>11. Limitation of Liability</h2>
+  <p>
+    To the fullest extent permitted by law, we are not liable for any indirect, incidental,
+    consequential, special, exemplary, or punitive damages, or for any loss of data, money,
+    savings, opportunities, profits, or business arising from your use of or inability to use the App.
+  </p>
+
+  <h2>12. Apple App Store Terms</h2>
+  <p>
+    If you downloaded the App from the Apple App Store, you also agree to Apple’s applicable terms,
+    including Apple’s standard end user license agreement where applicable. Apple is not responsible
+    for providing maintenance or support services for the App.
+  </p>
+  <p>
+    Apple and Apple’s subsidiaries are third-party beneficiaries of these Terms of Use. Upon your
+    acceptance of these Terms,
