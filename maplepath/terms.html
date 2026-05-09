@@ -1,169 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Use - MaplePath</title>
   <style>
+    :root {
+      --bg: #f7efe3;
+      --paper: #fffaf2;
+      --card: #fff6ea;
+      --line: #ead9c4;
+      --maple: #c9253f;
+      --maple-deep: #8f1d2c;
+      --forest: #2f6b57;
+      --gold: #c9983c;
+      --ink: #253238;
+      --muted: #6d7477;
+      --soft: #f1e3d0;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top right, rgba(201,37,63,0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(47,107,87,0.08), transparent 35%),
+        linear-gradient(180deg, #fbf4eb 0%, var(--bg) 58%, #efe2d0 100%);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    body::before {
+      content: "✦";
+      position: fixed;
+      top: 38px;
+      right: 34px;
+      font-size: 120px;
+      color: rgba(201,37,63,0.06);
+      pointer-events: none;
+    }
+
+    .container {
       max-width: 860px;
       margin: 0 auto;
-      padding: 32px 20px;
-      color: #1f2937;
-      background: #ffffff;
+      padding: 46px 22px 58px;
+      position: relative;
     }
-    h1, h2 {
-      color: #111827;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--maple);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 18px;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-    h2 {
+
+    .leaf {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(201,37,63,0.12);
+      display: grid;
+      place-items: center;
+      color: var(--maple);
       font-size: 20px;
-      margin-top: 28px;
     }
-    p, li {
-      font-size: 15px;
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 66px);
+      line-height: 1;
+      color: var(--ink);
+      letter-spacing: -0.03em;
     }
-    .updated {
-      color: #6b7280;
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 680px;
       margin-bottom: 28px;
     }
+
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      color: var(--forest);
+      font-size: 21px;
+      font-weight: 800;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+
+    .card {
+      background: rgba(255,250,242,0.92);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin: 24px 0;
+      box-shadow: 0 18px 42px rgba(83, 55, 31, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -34px;
+      top: -34px;
+      background: radial-gradient(circle, rgba(201,37,63,0.10), transparent 68%);
+      pointer-events: none;
+    }
+
+    .notice {
+      border-left: 4px solid var(--maple);
+      background: rgba(201,37,63,0.06);
+      border-radius: 14px;
+      padding: 14px 18px;
+      color: var(--ink);
+    }
+
     a {
-      color: #2563eb;
+      color: var(--maple-deep);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 46px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: #8a7e70;
+      font-size: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .container { padding: 34px 18px 46px; }
+      h1 { font-size: 42px; }
+      .card { padding: 20px 18px; }
     }
   </style>
 </head>
+
 <body>
-  <h1>Terms of Use</h1>
-  <p class="updated">Last updated: May 7, 2026</p>
+  <main class="container">
+    <div class="brand"><span class="leaf">✦</span> MaplePath Use Agreement</div>
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: May 2026</p>
+    <p class="subtitle">These terms apply to MaplePath, a personal Canada planning and organization app.</p>
 
-  <p>
-    These Terms of Use apply to the mobile application <strong>MaplePath</strong>
-    (“the App,” “we,” “our,” or “us”). By downloading, accessing, or using the App,
-    you agree to these Terms of Use.
-  </p>
+    <div class="card">
+      <p>
+        By downloading or using MaplePath, you agree to these Terms of Use.
+      </p>
+    </div>
 
-  <h2>1. Purpose of the App</h2>
-  <p>
-    MaplePath is a personal planning and organization tool designed to help users
-    track goals, documents, pathways, and progress in one place.
-  </p>
-  <p>
-    The App is intended for general personal organization and informational purposes only.
-    It does not provide immigration, legal, financial, tax, career, government, or professional advice.
-  </p>
+    <h2>1. About MaplePath</h2>
+    <p>
+      MaplePath is a personal planning and organization tool. It helps users track possible Canada
+      pathways, deadlines, documents, notes, and planning information.
+    </p>
+    <p>
+      MaplePath is not an immigration consultant, law firm, government service, or official immigration
+      application platform.
+    </p>
 
-  <h2>2. No Professional Advice</h2>
-  <p>
-    MaplePath may help users organize information, estimate progress, or review personal plans.
-    However, the App does not replace advice from qualified professionals, government agencies,
-    lawyers, consultants, financial advisors, tax professionals, or other licensed experts.
-  </p>
-  <p>
-    You are responsible for verifying all important information with official sources before making
-    decisions based on information entered into or displayed by the App.
-  </p>
+    <h2>2. No Legal or Immigration Advice</h2>
+    <p class="notice">
+      MaplePath does not provide legal advice, immigration advice, professional immigration consulting
+      services, approval predictions, or official recommendations.
+    </p>
+    <p>
+      Any information, checklist, reminder, pathway label, CRS note, or export summary inside the app is
+      for general planning and personal organization only.
+    </p>
+    <p>
+      Always verify details directly with IRCC, official government sources, or a licensed professional
+      before making decisions.
+    </p>
 
-  <h2>3. User Responsibility</h2>
-  <p>
-    You are responsible for the accuracy of information you enter into the App and for how you use
-    the App’s features, calculations, reminders, summaries, and saved records.
-  </p>
-  <p>
-    You should not rely on the App as the only source for important deadlines, official requirements,
-    payments, documents, or decisions.
-  </p>
+    <h2>3. User Responsibility</h2>
+    <p>
+      You are responsible for verifying all deadlines, eligibility requirements, documents, application
+      details, fees, forms, and official instructions directly with official sources.
+    </p>
+    <p>
+      MaplePath does not guarantee accuracy, completeness, eligibility, approval, or any immigration outcome.
+    </p>
 
-  <h2>4. Subscriptions and Payments</h2>
-  <p>
-    The App may offer optional auto-renewable subscriptions that unlock Pro features.
-  </p>
-  <p>Available subscription options may include:</p>
-  <ul>
-    <li><strong>Monthly Pro</strong> — auto-renewable subscription, 1 month</li>
-    <li><strong>Yearly Pro</strong> — auto-renewable subscription, 1 year</li>
-  </ul>
-  <p>
-    Pro features may include unlimited saved pathways, advanced planning tools, document tracking,
-    progress insights, and additional organization features. The exact features available may vary
-    by app version.
-  </p>
-  <p>
-    Payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions
-    automatically renew unless canceled at least 24 hours before the end of the current subscription
-    period. Your account may be charged for renewal within 24 hours prior to the end of the current
-    period.
-  </p>
-  <p>
-    You can manage or cancel your subscription in your App Store account settings. Deleting the App
-    does not automatically cancel an active subscription.
-  </p>
+    <h2>4. MaplePath Pro and In-App Purchase Terms</h2>
+    <p>
+      MaplePath may offer MaplePath Pro through Apple’s in-app purchase system. MaplePath Pro unlocks
+      additional app features such as expanded planning tools, more pathways, more deadlines, full document
+      checklist templates, comparison, notes, reminders, and export features.
+    </p>
+    <p>
+      If MaplePath Pro is offered as a one-time purchase, payment will be charged to your Apple ID at
+      confirmation of purchase. Purchases can be restored on devices using the same Apple ID through the
+      Restore Purchase option inside the app.
+    </p>
+    <p>
+      Prices may vary by country, region, currency, taxes, and App Store pricing. The final price shown
+      before purchase is provided by Apple.
+    </p>
+    <p>
+      MaplePath Pro unlocks premium features inside MaplePath only. It does not provide legal advice,
+      immigration advice, government services, application submission, professional representation, or
+      guaranteed outcomes.
+    </p>
+    <p>
+      Refund requests, billing issues, purchase history, and payment processing are handled by Apple
+      according to Apple’s App Store policies. The developer does not directly process App Store payments
+      or refunds.
+    </p>
+    <p>
+      If MaplePath Pro features do not unlock after purchase, use Restore Purchase inside the app or
+      contact support at <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>.
+    </p>
 
-  <h2>5. Free and Pro Features</h2>
-  <p>
-    The App may include both free features and Pro features. We may change, add, remove, limit,
-    or update features over time. Some features may require an active subscription.
-  </p>
+    <h2>5. No Government Affiliation</h2>
+    <p>
+      MaplePath is independent and is not affiliated with, endorsed by, sponsored by, or associated with
+      IRCC, the Government of Canada, or any government agency.
+    </p>
 
-  <h2>6. Privacy</h2>
-  <p>
-    Your use of the App is also governed by our Privacy Policy:
-    <br />
-    <a href="https://eclipse67211.github.io/idontneedat-legal/maplepath/privacy.html">
-      https://eclipse67211.github.io/idontneedat-legal/maplepath/privacy.html
-    </a>
-  </p>
+    <h2>6. Sensitive Information</h2>
+    <p>
+      Do not enter government account passwords, immigration portal passwords, banking passwords, sensitive
+      identity credentials, full passport images, or highly sensitive personal documents into MaplePath.
+    </p>
+    <p>
+      MaplePath is intended for planning notes, deadline tracking, and checklist organization only.
+    </p>
 
-  <h2>7. Acceptable Use</h2>
-  <p>
-    You agree not to misuse the App, interfere with its operation, reverse engineer it,
-    use it for illegal purposes, or use it in a way that violates applicable laws or the rights
-    of others.
-  </p>
+    <h2>7. Local Data and Backups</h2>
+    <p>
+      Information you enter may be stored locally on your device. You are responsible for managing your
+      device, backups, app data, and any information you choose to enter.
+    </p>
 
-  <h2>8. Availability and Changes</h2>
-  <p>
-    We may update, modify, suspend, or discontinue any part of the App at any time.
-    We do not guarantee that the App will always be available, accurate, error-free, or uninterrupted.
-  </p>
+    <h2>8. Limitation of Liability</h2>
+    <p>
+      To the fullest extent permitted by law, the developer of MaplePath is not responsible for missed
+      deadlines, incorrect user-entered information, application outcomes, financial losses, lost data,
+      immigration consequences, or other damages resulting from use of the app.
+    </p>
 
-  <h2>9. Disclaimer of Warranties</h2>
-  <p>
-    The App is provided on an “as is” and “as available” basis. To the fullest extent permitted
-    by law, we disclaim all warranties, express or implied, including warranties of merchantability,
-    fitness for a particular purpose, and non-infringement.
-  </p>
+    <h2>9. Changes to the App</h2>
+    <p>
+      MaplePath may be updated, changed, improved, or discontinued at any time. Features may be added,
+      modified, or removed in future versions.
+    </p>
 
-  <h2>10. Limitation of Liability</h2>
-  <p>
-    To the fullest extent permitted by law, we are not liable for any indirect, incidental,
-    consequential, special, exemplary, or punitive damages, or for any loss of data, documents,
-    deadlines, opportunities, profits, or business arising from your use of or inability to use the App.
-  </p>
+    <h2>10. Changes to These Terms</h2>
+    <p>
+      These Terms of Use may be updated from time to time. The latest version will be made available on
+      this page. Continued use of the app after changes means you accept the updated terms.
+    </p>
 
-  <h2>11. Apple App Store Terms</h2>
-  <p>
-    If you downloaded the App from the Apple App Store, you also agree to Apple’s applicable terms,
-    including Apple’s standard end user license agreement where applicable. Apple is not responsible
-    for providing maintenance or support services for the App.
-  </p>
+    <h2>11. Contact</h2>
+    <p>
+      For questions about these Terms, contact:
+      <br />
+      <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
+    </p>
 
-  <h2>12. Changes to These Terms</h2>
-  <p>
-    We may update these Terms of Use from time to time. Updates will be posted on this page with
-    a revised “Last updated” date. Your continued use of the App after changes are posted means
-    you accept the updated Terms.
-  </p>
-
-  <h2>13. Contact</h2>
-  <p>
-    If you have questions about these Terms, contact us at:
-    <br />
-    <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
-  </p>
+    <footer>
+      © 2026 MaplePath. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
