@@ -3,95 +3,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MaplePath Privacy Policy</title>
+  <title>Privacy Policy - MaplePath</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.65;
-      color: #1f2933;
-      background: #fafafa;
+    :root {
+      --bg: #f7efe3;
+      --paper: #fffaf2;
+      --card: #fff6ea;
+      --line: #ead9c4;
+      --maple: #c9253f;
+      --maple-deep: #8f1d2c;
+      --forest: #2f6b57;
+      --gold: #c9983c;
+      --ink: #253238;
+      --muted: #6d7477;
+      --soft: #f1e3d0;
     }
-    h1, h2 { color: #0f172a; }
-    h1 { font-size: 32px; margin-bottom: 8px; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    p, li { font-size: 15px; }
-    .date { color: #64748b; margin-bottom: 28px; }
-    a { color: #2563eb; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top right, rgba(201,37,63,0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(47,107,87,0.08), transparent 35%),
+        linear-gradient(180deg, #fbf4eb 0%, var(--bg) 58%, #efe2d0 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    body::before {
+      content: "✦";
+      position: fixed;
+      top: 38px;
+      right: 34px;
+      font-size: 120px;
+      color: rgba(201,37,63,0.06);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 46px 22px 58px;
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--maple);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .leaf {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(201,37,63,0.12);
+      display: grid;
+      place-items: center;
+      color: var(--maple);
+      font-size: 20px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 66px);
+      line-height: 1;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      color: var(--forest);
+      font-size: 21px;
+      font-weight: 800;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+
+    .card {
+      background: rgba(255,250,242,0.92);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin: 24px 0;
+      box-shadow: 0 18px 42px rgba(83, 55, 31, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -34px;
+      top: -34px;
+      background: radial-gradient(circle, rgba(201,37,63,0.10), transparent 68%);
+      pointer-events: none;
+    }
+
+    .notice {
+      border-left: 4px solid var(--maple);
+      background: rgba(201,37,63,0.06);
+      border-radius: 14px;
+      padding: 14px 18px;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--maple-deep);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 46px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: #8a7e70;
+      font-size: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .container { padding: 34px 18px 46px; }
+      h1 { font-size: 42px; }
+      .card { padding: 20px 18px; }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="date">Effective date: May 7, 2026</p>
+  <main class="container">
+    <div class="brand"><span class="leaf">✦</span> MaplePath Data Notice</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+    <p class="subtitle">MaplePath is designed as a manual planning tracker. It helps you organize your own dates, documents, pathway notes, and planning reminders.</p>
 
-  <p>
-    MaplePath is a personal planning and organization app designed to help users track timelines,
-    planning notes, checklist items, and related preparation information.
-  </p>
+    <div class="card">
+      <p>
+        MaplePath does not require a government account, IRCC account, immigration consultant account,
+        bank account, or enterprise login. Information you enter is used to support your own planning
+        inside the app.
+      </p>
+    </div>
 
-  <h2>Information We Collect</h2>
-  <p>
-    MaplePath does not require users to create an account or sign in.
-  </p>
-  <p>
-    Information entered into the app, such as planning notes, checklist items, timeline details,
-    and evidence entries, is stored locally on the user's device unless otherwise stated in the app.
-  </p>
+    <h2>1. Information You Enter</h2>
+    <p>MaplePath may allow you to manually enter information such as:</p>
+    <ul>
+      <li>Current status or planning situation</li>
+      <li>Permit, passport, language test, medical, biometrics, or other dates</li>
+      <li>Possible pathway notes</li>
+      <li>Document checklist items</li>
+      <li>CRS score or CRS gap notes, if you choose to enter them</li>
+      <li>Personal planning notes</li>
+    </ul>
 
-  <h2>Purchases and Subscriptions</h2>
-  <p>
-    MaplePath offers optional Pro features through Apple In-App Purchase. Subscription purchase
-    processing is handled by Apple and RevenueCat. We do not receive or store your full payment
-    card details.
-  </p>
-  <p>
-    RevenueCat may process purchase-related information such as subscription status, product ID,
-    transaction status, anonymous app user identifiers, and device/app information needed to manage
-    subscription access.
-  </p>
+    <h2>2. Local Storage</h2>
+    <p>
+      MaplePath is designed to store manually entered planning data locally on your device unless a future
+      version clearly states otherwise.
+    </p>
+    <p>
+      MaplePath does not operate a developer-managed server to view, collect, or manage your manually
+      entered planning data.
+    </p>
 
-  <h2>How We Use Information</h2>
-  <p>Information may be used to:</p>
-  <ul>
-    <li>Provide app functionality</li>
-    <li>Enable Pro subscription access</li>
-    <li>Restore previous purchases</li>
-    <li>Improve app reliability and user experience</li>
-  </ul>
+    <h2>3. No Government Connection</h2>
+    <p>
+      MaplePath does not connect to IRCC, the Government of Canada, immigration portals, or any government
+      system. MaplePath is not affiliated with, endorsed by, or sponsored by IRCC or any government agency.
+    </p>
 
-  <h2>Data Sharing</h2>
-  <p>
-    We do not sell personal information. Purchase-related information may be processed by Apple and
-    RevenueCat for subscription management and app functionality.
-  </p>
+    <h2>4. Sensitive Information</h2>
+    <p class="notice">
+      Do not enter government account passwords, immigration portal passwords, banking passwords,
+      sensitive identity credentials, full passport images, or other highly sensitive personal documents
+      into MaplePath.
+    </p>
 
-  <h2>Legal, Immigration, Tax, and Financial Advice</h2>
-  <p>
-    MaplePath is a personal planning and organization tool only. It does not provide legal,
-    immigration, tax, financial, or professional advice. Users should verify official requirements
-    with government sources or consult a qualified professional.
-  </p>
+    <h2>5. Data Collection</h2>
+    <p>
+      MaplePath does not sell your personal data. The developer does not access or share your locally
+      stored planning data.
+    </p>
+    <p>
+      If future versions include analytics, crash reporting, cloud sync, account features, or third-party
+      services, this Privacy Policy will be updated to describe those services.
+    </p>
 
-  <h2>Children's Privacy</h2>
-  <p>
-    MaplePath is not intended for children under 13. We do not knowingly collect personal information
-    from children under 13.
-  </p>
+    <h2>6. Apple App Store and Purchases</h2>
+    <p>
+      MaplePath may offer MaplePath Pro through Apple’s in-app purchase system. Purchase processing,
+      payment handling, refunds, and Apple ID-related purchase information are handled by Apple.
+    </p>
+    <p>
+      Apple may process information according to Apple’s own privacy policies and App Store terms.
+    </p>
 
-  <h2>Data Retention</h2>
-  <p>
-    Local app data remains on the user's device unless deleted by the user or removed when the app is
-    uninstalled. Purchase records may be retained by Apple and RevenueCat according to their own
-    policies.
-  </p>
+    <h2>7. Device and Backup Responsibility</h2>
+    <p>
+      Your app data may depend on your device storage and backup settings. You are responsible for managing
+      your device, backups, app data, and any information you choose to enter.
+    </p>
+    <p>
+      Deleting the app or clearing app data may remove locally stored information.
+    </p>
 
-  <h2>Contact</h2>
-  <p>
-    If you have questions about this Privacy Policy, contact us at:
-    <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
-  </p>
+    <h2>8. Children’s Privacy</h2>
+    <p>
+      MaplePath is not intended for children. It is designed as a personal planning and organization tool.
+    </p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated from time to time. The latest version will be made available on
+      this page.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      For privacy questions, contact:
+      <br />
+      <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
+    </p>
+
+    <footer>
+      © 2026 MaplePath. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
-
