@@ -5,66 +5,227 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MaplePath Support</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.65;
-      color: #1f2933;
-      background: #fafafa;
+    :root {
+      --bg: #f7efe3;
+      --paper: #fffaf2;
+      --card: #fff6ea;
+      --line: #ead9c4;
+      --maple: #c9253f;
+      --maple-deep: #8f1d2c;
+      --forest: #2f6b57;
+      --gold: #c9983c;
+      --ink: #253238;
+      --muted: #6d7477;
+      --soft: #f1e3d0;
     }
-    h1, h2 { color: #0f172a; }
-    h1 { font-size: 32px; margin-bottom: 8px; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    p, li { font-size: 15px; }
-    .date { color: #64748b; margin-bottom: 28px; }
-    a { color: #2563eb; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top right, rgba(201,37,63,0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(47,107,87,0.08), transparent 35%),
+        linear-gradient(180deg, #fbf4eb 0%, var(--bg) 58%, #efe2d0 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    body::before {
+      content: "✦";
+      position: fixed;
+      top: 38px;
+      right: 34px;
+      font-size: 120px;
+      color: rgba(201,37,63,0.06);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 46px 22px 58px;
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--maple);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .leaf {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(201,37,63,0.12);
+      display: grid;
+      place-items: center;
+      color: var(--maple);
+      font-size: 20px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 66px);
+      line-height: 1;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      color: var(--forest);
+      font-size: 21px;
+      font-weight: 800;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+
+    .card {
+      background: rgba(255,250,242,0.92);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin: 24px 0;
+      box-shadow: 0 18px 42px rgba(83, 55, 31, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -34px;
+      top: -34px;
+      background: radial-gradient(circle, rgba(201,37,63,0.10), transparent 68%);
+      pointer-events: none;
+    }
+
+    .notice {
+      border-left: 4px solid var(--maple);
+      background: rgba(201,37,63,0.06);
+      border-radius: 14px;
+      padding: 14px 18px;
+      color: var(--ink);
+    }
+
+    .pill {
+      display: inline-block;
+      margin: 6px 6px 0 0;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(47,107,87,0.10);
+      color: var(--forest);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--maple-deep);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 46px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: #8a7e70;
+      font-size: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .container { padding: 34px 18px 46px; }
+      h1 { font-size: 42px; }
+      .card { padding: 20px 18px; }
+    }
   </style>
 </head>
+
 <body>
-  <h1>MaplePath Support</h1>
-  <p class="date">Last updated: May 7, 2026</p>
+  <main class="container">
+    <div class="brand"><span class="leaf">✦</span> MaplePath Support</div>
+    <h1>Support</h1>
+    <p class="subtitle">Help and contact information for MaplePath, a calm Canada planning tracker for dates, documents, pathways, and notes.</p>
 
-  <p>
-    Need help with MaplePath? You can contact support by email.
-  </p>
+    <div class="card">
+      <h2>Contact Support</h2>
+      <p>
+        For app support, questions, bug reports, or feedback, contact:
+        <br />
+        <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
+      </p>
+    </div>
 
-  <h2>Contact</h2>
-  <p>
-    Email:
-    <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
-  </p>
+    <h2>About MaplePath</h2>
+    <p>
+      MaplePath helps users organize important Canada planning information such as permit dates,
+      passport dates, document checklists, possible pathways, notes, and next steps.
+    </p>
 
-  <h2>Common Questions</h2>
+    <h2>Common Help Topics</h2>
+    <div>
+      <span class="pill">Deadlines</span>
+      <span class="pill">Documents</span>
+      <span class="pill">Pathways</span>
+      <span class="pill">Notes</span>
+      <span class="pill">Export Summary</span>
+      <span class="pill">Restore Purchase</span>
+    </div>
 
-  <h3>Do I need an account?</h3>
-  <p>
-    No. MaplePath can be used without creating an account or signing in.
-  </p>
+    <h2>Important Notice</h2>
+    <p class="notice">
+      MaplePath is for planning and organization only. It does not provide legal advice,
+      immigration advice, approval predictions, or professional representation. Always verify
+      details directly with IRCC, official government sources, or a licensed professional.
+    </p>
 
-  <h3>How do I restore my Pro subscription?</h3>
-  <p>
-    Open the Pro page in the app and tap Restore Purchases. Make sure you are signed in with the same
-    Apple Account used for the original purchase.
-  </p>
+    <h2>Legal Links</h2>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      <br />
+      <a href="terms.html">Terms of Use</a>
+    </p>
 
-  <h3>Does MaplePath provide immigration advice?</h3>
-  <p>
-    No. MaplePath is a personal planning and organization tool only. It does not provide legal,
-    immigration, tax, financial, or professional advice.
-  </p>
-
-  <h3>Where can I manage my subscription?</h3>
-  <p>
-    You can manage or cancel subscriptions from your Apple Account settings on your iPhone.
-  </p>
-
-  <h2>Legal Pages</h2>
-  <p>
-    <a href="./privacy.html">Privacy Policy</a><br />
-    <a href="./terms.html">Terms of Use</a>
-  </p>
+    <footer>
+      © 2026 MaplePath. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
-
