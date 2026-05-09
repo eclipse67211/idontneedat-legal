@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ovlap Wallet Privacy Policy</title>
+  <title>Privacy Policy - Loot Ledger</title>
   <style>
     :root {
-      --bg: #090b0c;
-      --panel: #141819;
-      --panel-light: #1d2424;
-      --text: #f1eadc;
-      --muted: #a99f8f;
-      --amber: #d99832;
-      --green: #7cff8a;
-      --border: rgba(217, 152, 50, 0.35);
+      --bg: #0f0d09;
+      --panel: #17140f;
+      --border: #6f4c21;
+      --border-soft: #3a2b1b;
+      --text: #f4ead8;
+      --muted: #b9aa93;
+      --amber: #f2b24d;
+      --green: #77e0a1;
     }
 
     * {
@@ -22,196 +22,308 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(217, 152, 50, 0.18), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(124, 255, 138, 0.08), transparent 28%),
-        linear-gradient(135deg, #070808, #111515 55%, #090b0c);
+        radial-gradient(circle at top right, rgba(242, 178, 77, 0.08), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(119, 224, 161, 0.05), transparent 34%),
+        linear-gradient(180deg, #15120c 0%, #0f0d09 55%, #090806 100%);
       color: var(--text);
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
       min-height: 100vh;
-      padding: 24px;
     }
 
-    .wrap {
-      max-width: 900px;
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.25;
+    }
+
+    .container {
+      max-width: 860px;
       margin: 0 auto;
+      padding: 46px 22px 56px;
+      position: relative;
     }
 
-    header {
-      padding: 36px 0 20px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .badge {
-      display: inline-block;
-      color: var(--green);
-      border: 1px solid rgba(124, 255, 138, 0.35);
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      letter-spacing: 1.5px;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--amber);
       text-transform: uppercase;
-      background: rgba(124, 255, 138, 0.06);
+      letter-spacing: 0.22em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--amber);
+      display: inline-block;
     }
 
     h1 {
-      margin: 16px 0 8px;
-      font-size: clamp(34px, 6vw, 56px);
-      letter-spacing: -1px;
-      line-height: 1.05;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      max-width: 720px;
-      font-size: 17px;
-    }
-
-    main {
-      padding: 28px 0;
-      display: grid;
-      gap: 18px;
-    }
-
-    .panel {
-      background: linear-gradient(180deg, rgba(29, 36, 36, 0.96), rgba(15, 18, 18, 0.98));
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 28px 28px;
-      pointer-events: none;
-      opacity: 0.35;
-    }
-
-    .panel > * {
-      position: relative;
-      z-index: 1;
+      margin: 0 0 10px;
+      font-size: clamp(38px, 8vw, 72px);
+      line-height: 0.95;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text);
+      font-weight: 900;
     }
 
     h2 {
-      margin-top: 0;
+      margin-top: 36px;
+      margin-bottom: 12px;
       color: var(--amber);
-      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 18px;
+      font-weight: 900;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 8px;
     }
 
-    p {
-      margin-bottom: 0;
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01)),
+        var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin: 26px 0;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.03) inset,
+        0 18px 40px rgba(0,0,0,0.28);
+      position: relative;
+    }
+
+    .card::before,
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: var(--amber);
+      opacity: 0.9;
+    }
+
+    .card::before {
+      top: 10px;
+      left: 10px;
+      border-top: 2px solid;
+      border-left: 2px solid;
+    }
+
+    .card::after {
+      bottom: 10px;
+      right: 10px;
+      border-bottom: 2px solid;
+      border-right: 2px solid;
     }
 
     a {
-      color: var(--green);
+      color: var(--amber);
+      font-weight: 800;
       text-decoration: none;
-      border-bottom: 1px solid rgba(124, 255, 138, 0.35);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      border-left: 4px solid var(--amber);
+      padding: 14px 18px;
+      background: rgba(242,178,77,0.08);
+      border-radius: 12px;
+      color: var(--text);
     }
 
     footer {
-      color: var(--muted);
-      font-size: 13px;
-      padding: 24px 0;
-      border-top: 1px solid rgba(217, 152, 50, 0.2);
-      margin-top: 12px;
+      margin-top: 48px;
+      color: #8e8375;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 22px;
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 34px 18px 44px;
+      }
+
+      .card {
+        padding: 20px 18px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <span class="badge">Privacy Policy</span>
-      <h1>Ovlap Wallet Privacy Policy</h1>
-      <p class="subtitle">
-        Ovlap Wallet is designed as a simple local wallet and card tracking utility.
-        This page explains how information is handled.
+  <main class="container">
+    <div class="eyebrow">Data Protocol</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated May 2026</p>
+
+    <div class="card">
+      <p>
+        Loot Ledger is a manual IT asset and device inventory tracking app.
+        It helps users organize asset records, assigned users, locations, notes,
+        operations, and inventory activity.
       </p>
-    </header>
+      <p>
+        Loot Ledger is designed as a local manual tracking tool. It does not
+        require a company account, MDM connection, ticketing system connection,
+        or enterprise login.
+      </p>
+    </div>
 
-    <main>
-      <section class="panel">
-        <h2>Introduction</h2>
-        <p>
-          Ovlap Wallet helps users organize wallet and card-related information.
-          The app is designed to be simple, practical, and privacy-conscious.
-        </p>
-      </section>
+    <h2>1. Information You Enter</h2>
+    <p>
+      Loot Ledger may allow you to manually enter information such as:
+    </p>
+    <ul>
+      <li>Asset names and asset tags</li>
+      <li>Serial numbers</li>
+      <li>Device type or equipment type</li>
+      <li>Assigned user names or team names</li>
+      <li>Locations</li>
+      <li>Asset status, condition, warranty dates, and notes</li>
+      <li>Operations, workflow tasks, and activity history</li>
+    </ul>
+    <p>
+      This information is created and managed by you for inventory tracking
+      and organization purposes.
+    </p>
 
-      <section class="panel">
-        <h2>Information We Collect</h2>
-        <p>
-          Ovlap Wallet does not require users to create an account. Information entered
-          into the app, such as card names, notes, balances, or settings, is used only
-          to provide the app’s core features.
-        </p>
-      </section>
+    <h2>2. Local Storage</h2>
+    <p>
+      Loot Ledger is designed to store manually entered inventory data locally
+      on your device unless a future version clearly states otherwise.
+    </p>
+    <p>
+      Loot Ledger does not operate a developer-managed server to collect, view,
+      or manage your inventory records.
+    </p>
 
-      <section class="panel">
-        <h2>How We Use Information</h2>
-        <p>
-          User-entered information is used to display and manage wallet-related details
-          inside the app. We do not sell personal data and do not use user data for
-          advertising.
-        </p>
-      </section>
+    <h2>3. No Enterprise System Connection</h2>
+    <p>
+      Loot Ledger does not connect to Microsoft Intune, Jamf, MDM platforms,
+      ticketing systems, HR systems, accounting systems, or company identity
+      providers.
+    </p>
+    <p>
+      The app does not ask for admin credentials, company passwords, API keys,
+      MDM tokens, or enterprise login details.
+    </p>
 
-      <section class="panel">
-        <h2>Data Storage</h2>
-        <p>
-          Ovlap Wallet is intended to store app data locally on the user’s device unless
-          future features are added. If cloud sync, analytics, paid features, or other
-          services are introduced, this policy may be updated.
-        </p>
-      </section>
+    <h2>4. Sensitive Information</h2>
+    <p class="notice">
+      Do not enter passwords, API keys, recovery keys, encryption keys, private
+      credentials, personal identity documents, financial information, or other
+      sensitive confidential information into Loot Ledger.
+    </p>
+    <p>
+      Loot Ledger is intended for lightweight inventory tracking and asset
+      organization only.
+    </p>
 
-      <section class="panel">
-        <h2>Data Sharing</h2>
-        <p>
-          We do not sell, rent, or trade user data. We do not share user-entered wallet
-          information with advertisers.
-        </p>
-      </section>
+    <h2>5. Data Collection</h2>
+    <p>
+      Loot Ledger does not sell your personal data.
+    </p>
+    <p>
+      Loot Ledger does not collect your manually entered inventory data on a
+      developer-operated server.
+    </p>
 
-      <section class="panel">
-        <h2>Children’s Privacy</h2>
-        <p>
-          Ovlap Wallet is not intended to knowingly collect personal information from
-          children.
-        </p>
-      </section>
+    <h2>6. Apple App Store and Purchases</h2>
+    <p>
+      Loot Ledger may offer Loot Ledger Pro through Apple’s in-app purchase
+      system. Purchase processing, payment handling, refunds, and Apple ID-related
+      purchase information are handled by Apple.
+    </p>
+    <p>
+      Apple may process information according to Apple’s own privacy policies
+      and App Store terms.
+    </p>
 
-      <section class="panel">
-        <h2>Changes to This Policy</h2>
-        <p>
-          This Privacy Policy may be updated from time to time. Any changes will be
-          reflected on this page.
-        </p>
-      </section>
+    <h2>7. Data Sharing</h2>
+    <p>
+      Loot Ledger does not sell your data. The developer does not access or share
+      your locally stored inventory records.
+    </p>
 
-      <section class="panel">
-        <h2>Contact Us</h2>
-        <p>
-          For privacy questions, contact:
-          <br />
-          <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
-        </p>
-      </section>
-    </main>
+    <h2>8. Device and Backup Responsibility</h2>
+    <p>
+      Your app data may depend on your device storage and backup settings. You
+      are responsible for managing your device, backups, app data, and any
+      information you choose to enter.
+    </p>
+    <p>
+      Deleting the app or clearing app data may remove locally stored information.
+    </p>
+
+    <h2>9. Children’s Privacy</h2>
+    <p>
+      Loot Ledger is not intended for children. It is designed as an inventory
+      and organization tool for users managing equipment or asset records.
+    </p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated from time to time. The latest version
+      will be made available on this page.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      For privacy questions, contact:
+      <br />
+      <a href="mailto:shanapply21@gmail.com">shanapply21@gmail.com</a>
+    </p>
 
     <footer>
-      © 2026 Ovlap Wallet. All rights reserved.
+      © 2026 Loot Ledger. All rights reserved.
     </footer>
-  </div>
+  </main>
 </body>
 </html>
 
